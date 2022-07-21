@@ -1,0 +1,25 @@
+comandos a serem rodados
+
+* npm run dev
+* npm i mongodb
+
+mongodb
+
+* db.auth(<username>, <password>) //como logar
+* user: mongoAdmin, password: 123456
+* database ocean_backend_db have user oceanAdmin and password 123456
+* db.createCollection // show collections
+
+mongodb SuperUser
+
+* db.createUser(
+* {
+*     user: "tom",
+*     pwd: "jerry",
+*     roles: [
+*               { role: "userAdminAnyDatabase", db: "admin" },
+*               { role: "readWriteAnyDatabase", db: "admin" },
+*               { role: "dbAdminAnyDatabase", db: "admin" },
+*               { role: "clusterAdmin", db: "admin" }
+*            ]
+* })
