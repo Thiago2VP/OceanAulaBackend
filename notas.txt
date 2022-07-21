@@ -1,6 +1,7 @@
 comandos a serem rodados
 
 * npm run dev
+* npm i nodemon
 * npm i mongodb
 
 mongodb
