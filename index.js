@@ -5,6 +5,7 @@ const url = "mongodb://mongoAdmin:123456@localhost:27017/";
 const dbName = "ocean_backend_db";
 
 async function main() {
+  /*
   console.log("Conectando ao banco de dados...");
 
   const client = await MongoClient.connect(url);
@@ -12,6 +13,7 @@ async function main() {
   const collection = db.collection("herois");
 
   console.log("Banco de dados conectado com sucesso!");
+  */
 
   // Aplicaçao end express
 
@@ -96,7 +98,7 @@ async function main() {
     res.send("Item removido com sucesso!");
   });
 
-  app.listen(3000, function () {
+  app.listen(process.env.PORT || 3000, function () {
     console.log("Aplicação rodando em http://localhost:3000");
   });
 }
